@@ -225,11 +225,11 @@ button, input, textarea {
 /* ==========================================
    LAYOUT STRUCTURE
    ========================================= */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.container{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 40px;
 }
 
 section{
@@ -326,13 +326,15 @@ background-clip: text;
   border-bottom: 1px solid var(--glass-border);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 }
+.nav-container{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:0 40px;
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-left: 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo {
@@ -343,7 +345,6 @@ background-clip: text;
   color: var(--text-primary);
   text-shadow: 0 0 10px rgba(0, 171, 240, 0.4);
   transition: all var(--transition-fast);
-  margin-left: -20px; /* Logo konjam left side move */
 }
 
 .logo:hover {
@@ -358,12 +359,12 @@ background-clip: text;
     -webkit-text-fill-color: initial;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:2.5rem;
+    margin-left:auto;
 }
-
 .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
@@ -735,8 +736,8 @@ background-clip: text;
     justify-content:center;
     align-items:center;
     margin:auto;
-    animation:float 4s ease-in-out infinite;
 }
+
 .profile-img-container{
     width:260px;
     height:260px;
@@ -751,11 +752,9 @@ background-clip: text;
     transition:all .4s ease;
 }
 .profile-img-container:hover{
-transform:scale(1.05);
-box-shadow:
-0 0 40px #00d4ff,
-0 0 90px #00d4ff,
-0 0 140px rgba(0,212,255,.8);
+    box-shadow:
+        0 0 25px #00d4ff,
+        0 0 60px rgba(0,212,255,.5);
 }
 
 .profile-img-container img{
@@ -776,19 +775,14 @@ border-radius:50%;
     height:320px;
     border:2px solid rgba(0,212,255,.45);
     border-radius:50%;
-    animation:rotate 10s linear infinite;
 }
+
 .orbit2{
-    position: absolute;
-    width: 390px;
-    height: 390px;
-    border: 2px dashed rgba(0,212,255,.35);
-    border-radius: 50%;
-    animation: rotateReverse 16s linear infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
+    position:absolute;
+    width:390px;
+    height:390px;
+    border:2px dashed rgba(0,212,255,.35);
+    border-radius:50%;
 }
 
 .particle{
@@ -1480,31 +1474,87 @@ textarea.form-input {
    PROFESSIONAL FOOTER
    ========================================== */
 footer{
-    background:#050505;
-    padding:12px 0;
-    border-top:1px solid rgb(86, 84, 84);
+    background:linear-gradient(180deg,#071b2c 0%,#050d16 100%);
+    border-top:1px solid rgba(0,171,240,.15);
+    padding:45px 0 20px;
+}
+.footer-logo{
+    font-size:2.2rem;
+    font-weight:800;
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+}
+
+.footer-logo span{
+    color:#00abf0;
+    text-shadow:0 0 15px #00abf0;
+}
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.footer-links a{
+    color:#b8c7d8;
+    text-decoration:none;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#00abf0;
+    transform:translateY(-3px);
 }
 
 .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    padding-top:20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    font-size:.9rem;
-    color:#ffffff;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
-.footer-bottom p:first-child{
-    margin-left:35px;
+.footer-bottom p{
+    color:#fff;
+    margin:0;
+}
+footer::before{
+    content:"";
+    display:block;
+    width:100%;
+    height:1px;
+    background:linear-gradient(
+        to right,
+        transparent,
+        #00abf0,
+        transparent
+    );
+    margin-bottom:30px;
 }
 
-.footer-crafted{
-    margin-right:35px;
+.footer-crafted span{
+    color:#ff3b3b;
+    animation:heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.25);
+    }
 }
 
 .footer-crafted span{
     color:#ff3b3b;
 }
-
 /* ==========================================
    RESPONSIVE MEDIA QUERIES
    ========================================== */
