@@ -233,12 +233,11 @@ button, input, textarea {
 }
 
 section{
-position:relative;
-min-height:100vh;
-padding:90px 0;
-display:flex;
-align-items:center;
-justify-content:center;
+    min-height:100vh;
+    padding:75px 0 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .section-header {
@@ -333,6 +332,7 @@ background-clip: text;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-left: 20px;
 }
 
 .logo {
@@ -343,6 +343,7 @@ background-clip: text;
   color: var(--text-primary);
   text-shadow: 0 0 10px rgba(0, 171, 240, 0.4);
   transition: all var(--transition-fast);
+  margin-left: -20px; /* Logo konjam left side move */
 }
 
 .logo:hover {
@@ -457,13 +458,13 @@ background-clip: text;
 /* ==========================================
    HOME PAGE LAYOUT
    ========================================== */
-#home-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  background: var(--bg-primary);
-  padding: 90px 0 0;
-  overflow: hidden;
+#home-section{
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    background: var(--bg-primary);
+    padding: 75px 0 0;
+    overflow: hidden;
 }
 
 .hero-wrapper {
@@ -483,12 +484,14 @@ background-clip: text;
 }
 
 .hero-title {
-  font-size: clamp(3.75rem, 8vw, 5rem); /* 60px to 80px */
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.1;
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.02em;
+    font-size: clamp(3.2rem, 6vw, 4.8rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+
+    white-space: nowrap;
 }
 
 .hero-title span {
@@ -1476,89 +1479,30 @@ textarea.form-input {
 /* ==========================================
    PROFESSIONAL FOOTER
    ========================================== */
-footer {
-  border-top: 1px solid var(--glass-border);
-  background: rgba(10, 10, 10, 0.95);
-  padding: 4rem 0;
-  position: relative;
-  z-index: 1;
+footer{
+    background:#050505;
+    padding:12px 0;
+    border-top:1px solid rgb(86, 84, 84);
 }
 
-.footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  text-align: center;
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:.9rem;
+    color:#ffffff;
 }
 
-.footer-logo {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+.footer-bottom p:first-child{
+    margin-left:35px;
 }
 
-.footer-logo span {
-  background: var(--accent-gradient);
-  background-clip: text;
-background-clip: text;
--webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.footer-crafted{
+    margin-right:35px;
 }
 
-.footer-menu {
-  display: flex;
-  gap: 2.5rem;
-}
-
-.footer-link {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-}
-
-.footer-link:hover {
-  color: var(--text-primary);
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
-}
-
-.footer-socials {
-  display: flex;
-  gap: 1rem;
-}
-
-.footer-socials .floating-icon {
-  width: 40px;
-  height: 40px;
-}
-
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  color: var(--text-muted);
-  font-size: 0.85rem;
-}
-
-.footer-crafted {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.footer-crafted span {
-  color: #ff3e3e;
-  animation: heartBeat 1.2s infinite;
-}
-
-@keyframes heartBeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+.footer-crafted span{
+    color:#ff3b3b;
 }
 
 /* ==========================================
@@ -1733,12 +1677,12 @@ background-clip: text;
   .hamburger.active .hamburger-line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
-  #home-section{
-  min-height:100vh;
-  padding:90px 0 40px;
+#home-section{
+    height:100dvh;
+    min-height:100dvh;
+    padding:85px 0 0;
+    overflow:hidden;
 }
-
   .hero-wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -1803,12 +1747,16 @@ background-clip: text;
     grid-template-columns: 1fr;
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  }
+ @media (max-width:768px){
+
+.footer-bottom{
+    flex-direction:column;
+    gap:6px;
+    text-align:center;
+    font-size:.8rem;
+}
+
+}
 
   .skills-grid{
     grid-template-columns:1fr;
@@ -1824,9 +1772,11 @@ background-clip: text;
 }
 /* Small Screens (480px) */
 @media screen and (max-width: 480px) {
-  #home-section{
-  min-height:100vh;
-  padding:90px 0 30px;
+ #home-section{
+    height:100dvh;
+    min-height:100dvh;
+    padding:85px 0 0;
+    overflow:hidden;
 }
 
   .hero-wrapper {
