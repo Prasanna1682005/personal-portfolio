@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Prasanna Kumar VM</title>
+  <meta name="description" content="Get in touch with Prasanna Kumar VM. Submit an inquiry, request a consultation, or connect directly.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="public/css/style.css">
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="no-scroll page-fade-in">
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-text">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <!-- GLOWING BACKGROUND ORBS -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span>&lt;/&gt;</span> PORTFOLIO</a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT SECTION -->
+  <main>
+    <section id="contact-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">SAY HELLO</span>
+          <h2 class="section-title">Contact <span>Me</span></h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left side: Direct Contact Info cards -->
+          <div class="contact-info" id="contact-info-list">
+            
+            <!-- Email Item -->
+            <div class="glass-card contact-item" id="info-card-email">
+              <div class="contact-icon">
+                <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email Me</h4>
+                <p><a href="mailto:ramdiva7733@gmail.com">ramdiva7733@gmail.com</a></p>
+              </div>
+            </div>
+
+            <!-- Phone Item -->
+            <div class="glass-card contact-item" id="info-card-phone">
+              <div class="contact-icon">
+                <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Call Me</h4>
+                <p><a href="tel:+919080815363">+91 9080815363</a></p>
+              </div>
+            </div>
+
+            <!-- Location Item -->
+            <div class="glass-card contact-item" id="info-card-location">
+              <div class="contact-icon">
+                <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div class="contact-details">
+                <h4>My Location</h4>
+                <p>Hosur, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right side: Contact Message Form -->
+          <div class="glass-card contact-form-card" id="contact-form-container">
+            <form id="contact-form" class="contact-form" novalidate>
+              
+              <!-- Full Name Input -->
+              <div class="form-group" id="form-group-name">
+                <label for="input-name" class="form-label">Full Name</label>
+                <input type="text" id="input-name" name="from_name" class="form-input" placeholder="e.g. Jane Doe" required>
+                <span class="error-msg">Please enter your name.</span>
+              </div>
+
+              <!-- Email Address Input -->
+              <div class="form-group" id="form-group-email">
+                <label for="input-email" class="form-label">Email Address</label>
+                <input type="email" id="input-email" name="from_email" class="form-input" placeholder="e.g. jane@example.com" required>
+                <span class="error-msg">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Phone Number Input (Optional) -->
+              <div class="form-group" id="form-group-phone">
+                <label for="input-phone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" id="input-phone" name="phone" class="form-input" placeholder="e.g. +91 9876543210">
+                <span class="error-msg">Please enter a valid phone number.</span>
+              </div>
+
+              <!-- Subject Input -->
+              <div class="form-group" id="form-group-subject">
+                <label for="input-subject" class="form-label">Subject</label>
+                <input type="text" id="input-subject" name="subject" class="form-input" placeholder="e.g. Project Inquiry" required>
+                <span class="error-msg">Please enter a message subject.</span>
+              </div>
+
+              <!-- Message Body Textarea -->
+              <div class="form-group full-width" id="form-group-message">
+                <label for="input-message" class="form-label">Your Message</label>
+                <textarea id="input-message" name="message" class="form-input" placeholder="Type your message here..." required></textarea>
+                <span class="error-msg">Please write a message content.</span>
+              </div>
+
+              <!-- Status Message Handler (Success/Error block) -->
+              <div id="form-status" class="form-status"></div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary contact-submit" id="btn-submit-message">
+                <span>Send Message</span>
+                <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up" style="width: 22px; height: 22px;"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-wrapper">
+      <a href="index.html" class="footer-logo"><span>&lt;/&gt;</span> PORTFOLIO</a>
+      
+      <nav class="footer-menu">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="skills.html" class="footer-link">Skills</a>
+        <a href="portfolio.html" class="footer-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prasanna Kumar VM. All rights reserved.</p>
+        <p class="footer-crafted">
+          Crafted with <span>❤️</span> in Tamil Nadu
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS Library -->
+
+<!-- Custom Script -->
+<script src="public/js/script.js" defer></script>
+
+</body>
+</html>

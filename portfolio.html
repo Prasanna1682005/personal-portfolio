@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Prasanna Kumar VM</title>
+  <meta name="description" content="View featured projects by Prasanna Kumar VM, including Voice Calculator, Drive2Park parking reservation, and Studify.">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="public/css/style.css">
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="no-scroll page-fade-in">
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <div class="loader-text">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <!-- GLOWING BACKGROUND ORBS -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><span>&lt;/&gt;</span> PORTFOLIO</a>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN PORTFOLIO SECTION -->
+  <main>
+    <section id="portfolio-section">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-subtitle">MY WORKS</span>
+          <h2 class="section-title">My <span>Portfolio</span></h2>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolio-project-grid">
+          
+          <!-- PROJECT 1: VOICE CALCULATOR -->
+          <article class="glass-card project-card" id="project-voice-calculator">
+            <div class="project-img">
+              <img src="public/images/project_quantex.jpg">
+              <!-- Animated Hover Overlay -->
+              <div class="project-overlay">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-overlay-link" title="Source Code">
+                  <i data-lucide="github" style="width: 22px; height: 22px;"></i>
+                </a>
+                <a href="contact.html" class="project-overlay-link" title="Request Live Demo">
+                  <i data-lucide="external-link" style="width: 22px; height: 22px;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Speech Web API</span>
+              </div>
+              <h3 class="project-title">Voice Calculator</h3>
+              <p class="project-desc">
+                An interactive and eyes-free scientific and standard voice calculator using the native browser Web Speech Recognition API to parse mathematical operations spoken aloud.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-btn" id="link-code-calc">
+                  Source Code <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: DRIVE2PARK -->
+          <article class="glass-card project-card" id="project-drive2park">
+            <div class="project-img">
+              <img src="public/images/project_devsync.jpg" alt="DevSync">
+              <div class="project-overlay">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-overlay-link" title="Source Code">
+                  <i data-lucide="github" style="width: 22px; height: 22px;"></i>
+                </a>
+                <a href="contact.html" class="project-overlay-link" title="Request Live Demo">
+                  <i data-lucide="external-link" style="width: 22px; height: 22px;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Local Storage</span>
+              </div>
+              <h3 class="project-title">Drive2Park</h3>
+              <p class="project-desc">
+                A multi-page responsive parking slot locator and reservation portal, featuring visual grid maps, real-time ticket checkout processes, and active slot reservation status persistence.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-btn" id="link-code-park">
+                  Source Code <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: STUDIFY -->
+          <article class="glass-card project-card" id="project-studify">
+            <div class="project-img">
+              <img src="public/images/project_aura.jpg" alt="Aura">
+              <div class="project-overlay">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-overlay-link" title="Source Code">
+                  <i data-lucide="github" style="width: 22px; height: 22px;"></i>
+                </a>
+                <a href="contact.html" class="project-overlay-link" title="Request Live Demo">
+                  <i data-lucide="external-link" style="width: 22px; height: 22px;"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Planner Engine</span>
+              </div>
+              <h3 class="project-title">Studify</h3>
+              <p class="project-desc">
+                A comprehensive productivity cockpit designed for university students, packing rich tools such as interactive course planning, calendar trackers, note storage, and pomodoro study timers.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/prasanna-kumar-vm" target="_blank" rel="noopener noreferrer" class="project-btn" id="link-code-study">
+                  Source Code <i data-lucide="arrow-up-right" style="width: 14px; height: 14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up" style="width: 22px; height: 22px;"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-wrapper">
+      <a href="index.html" class="footer-logo"><span>&lt;/&gt;</span> PORTFOLIO</a>
+      
+      <nav class="footer-menu">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="skills.html" class="footer-link">Skills</a>
+        <a href="portfolio.html" class="footer-link">Portfolio</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </nav>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prasanna Kumar VM. All rights reserved.</p>
+        <p class="footer-crafted">
+          Crafted with <span>❤️</span> in Tamil Nadu
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="public/js/script.js" defer></script>
+</body>
+</html>

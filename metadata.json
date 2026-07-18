@@ -1,0 +1,6 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A modern, professional, fully responsive Personal Portfolio Website using pure HTML, CSS, and JavaScript with glassmorphism and smooth animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
